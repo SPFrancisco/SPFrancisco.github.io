@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLOW WORLD</h1>
+    <section>
+        <article>
+            <p>Bueno, la verdad es que no pensé que las cosas se fueran a extremar más de lo que ya estaban, pero es imposible tener el control de todas las cosas por más que lo intentemos, vivimos en un mundo lleno de diferentes personas, con diferentes maneras de pensar y con distintas personalidades. En fin, no busco darle muchas vueltas al asunto y tampoco es mi intención así que me limitare solo a las cosas que me competen.</p>
+        </article>
+        <article>
+            <h2>Primera parte</h2>
+            <p>Para empezar, quiero retomar los últimos cuatro meses del año pasado, pero para empezar quiero ir puntualmente a un evento, recuerdo que me escribiste el día después de tu cumpleaños, pero no es mi intención entrar tampoco en detalles sobre el mismo, lo que si quiero es entrar en detalles sobre una frase que te dije en ese momento y fue “No me guardes en tu corazón”. Tengo la certeza que piensas que yo no te llevo presente y por eso no te felicite, pero eso es solo porque estas viendo las cosas desde tú punto de vista.</p>
+            <p>Ya hemos pasado por esto en varias ocasiones y vas a tratar lo que diga a continuación como una excusa como siempre, y no es lo que pienso, es lo que en reiteradas ocasiones me has dicho. Si te interesa saber puedes seguir leyendo o dejarlo aquí ahora mismo.</p>
+            <button id="boton" type="button">Ver</button>
+        </article>
+        <article id="oculto" class="visually-hidden">
+            <p>Aproximadamente un mes antes yo hice una crisis de estrés agudo acumulado producto del compromiso de dos bogas y las eventualidades de cada una, la primera de las boda fue a finales octubre los trajes del cortejo los habíamos pedido del exterior, mi pantalón se mando al sastre para un pequeña corrección pero quizás producto de un malentendido el pantalón tuvo un arreglo extra que básicamente lo daño y yo tuve que ver a solo como dos semanas de la boda como yo podía resolver ese problema, porque si bien yo podía utilizar el pantalón no podía ser por tiempos muy prolongados, aparte de eso el día de tu cumpleaños yo me la pase trabajando en la mañana, pero la tarde la malgaste con mi hermana (la que va antes de mi) en Santo Domingo porque teníamos que ir a buscar un vestido para la otra boda que fue en noviembre y que fue la boda de mi hermana (la mayor).</p>
+            <p>Bueno el asunto es que con la crisis de estrés que sufrí hice un caso de alopecia areata, por lo que tomé la decisión de trabajar en las eventualidades una por una y llevar las cosas mentalmente de una manera más fría y de ahí surge mi respuesta para ti en ese momento y no te lo vayas a tomar a mal, pero intentar entrar en razón contigo cuando estas en una situación que te molesta y estas hermética solo me llevaría a otra situación de estrés más con la cual tendría que lidiar.</p>
+        </article>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $("#boton").click(function(){
+                $("#oculto").removeClass("visually-hidden");
+            });
+        });
+    </script>
 </body>
 </html>
